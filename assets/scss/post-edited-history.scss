@@ -1,0 +1,61 @@
+html {
+    scroll-padding-top: 100px; /* Adjust the value as needed */
+}
+.el-sticky-widget {
+    position: sticky;
+    top: 170px;
+    right: 0;
+}
+
+.sg-edit-history {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        position: relative;
+        z-index: 2;
+        padding-left: 26px;
+        margin-bottom: 7px;
+        color: #292929;
+        font-size: 14px;
+        &:before {
+            content: url('data:image/svg+xml,<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.206068 8.08791C-0.0686894 7.59999 -0.0686894 7.01915 0.206068 6.53123L3.37161 0.909729C3.68637 0.35075 4.31225 0 4.99492 0H11.0051C11.6877 0 12.3136 0.35075 12.6284 0.90973L15.7939 6.53123C16.0687 7.01915 16.0687 7.59999 15.7939 8.08791L12.6284 13.7094C12.3136 14.2684 11.6877 14.6191 11.0051 14.6191H4.99492C4.31225 14.6191 3.68637 14.2684 3.37161 13.7094L0.206068 8.08791Z" fill="%23E3E829"/></svg>');
+            position: absolute;
+            top: 6px;
+            left: 0;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            top: 25px;
+            left: 8px;
+            height: 20px;
+            width: 1px;
+            background-color: #E5E7EB;
+        }
+        span {
+            font-size: 18px;
+            color: #545454;
+            display: block;
+            font-weight: 500;
+        }
+        &:first-child {
+            font-size: 18px;
+            font-weight: 500;
+            color: #002855;
+            padding-bottom: 11px;
+            &:before {
+                content: url('data:image/svg+xml,<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.206068 8.08791C-0.0686894 7.59999 -0.0686894 7.01915 0.206068 6.53123L3.37161 0.909729C3.68637 0.35075 4.31225 0 4.99492 0H11.0051C11.6877 0 12.3136 0.35075 12.6284 0.90973L15.7939 6.53123C16.0687 7.01915 16.0687 7.59999 15.7939 8.08791L12.6284 13.7094C12.3136 14.2684 11.6877 14.6191 11.0051 14.6191H4.99492C4.31225 14.6191 3.68637 14.2684 3.37161 13.7094L0.206068 8.08791Z" fill="%23002855"/></svg>');
+                top: 3px;
+            }
+            &:after {
+                top: 27px;
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
